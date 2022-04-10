@@ -1,7 +1,7 @@
 from urllib import response
 from rest_framework import generics, permissions, mixins
 from rest_framework.response import Response
-from .serializer import RegisterSerializer, UserSerializer
+from .serializers import RegisterSerializer, UserSerializer
 from django.contrib.auth.models import User
 
 #Register API
