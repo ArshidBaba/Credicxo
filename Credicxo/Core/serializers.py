@@ -1,4 +1,3 @@
-import imp
 from rest_framework import serializers
 from rest_framework.permissions import IsAuthenticated
 from django.db import models
