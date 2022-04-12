@@ -26,5 +26,25 @@ class RegisterSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ('__all__')
+
+# Student Serializer
+class StudentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        # fields = ('id', 'username', 'email', 'first_name', 'last_name',)
+        fields = ('__all__')
+        # permissions = ()
+
+# class TeacherSerializer():
+#     class Meta:
+#         permissions = ('can_add_user', 'can_view_user')
+#         model = User
+#         fields = ('id', 'first_name', 'last_name')
+
+class StudentDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('__all__')
+        # fields = ('id', 'username', 'email', 'first_name', 'last_name',)
 
